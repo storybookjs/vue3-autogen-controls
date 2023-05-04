@@ -1,0 +1,46 @@
+{
+  "name": "before-storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "NODE_OPTIONS=\"--preserve-symlinks --preserve-symlinks-main\" STORYBOOK_TELEMETRY_URL=\"http://localhost:6007/event-log\" storybook dev -p 6006",
+    "build-storybook": "NODE_OPTIONS=\"--preserve-symlinks --preserve-symlinks-main\" STORYBOOK_TELEMETRY_URL=\"http://localhost:6007/event-log\" storybook build"
+  },
+  "dependencies": {
+    "@types/node": "16",
+    "class-variance-authority": "^0.6.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.1.0-alpha.12",
+    "@storybook/addon-interactions": "^7.1.0-alpha.12",
+    "@storybook/addon-links": "^7.1.0-alpha.12",
+    "@storybook/blocks": "^7.1.0-alpha.12",
+    "@storybook/jest": "future",
+    "@storybook/test-runner": "future",
+    "@storybook/testing-library": "future",
+    "@storybook/vue3": "^7.1.0-alpha.12",
+    "@storybook/vue3-vite": "^7.1.0-alpha.12",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.1.0-alpha.12",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1",
+    "vite": "^4.3.2",
+    "vue-tsc": "^1.4.2"
+  },
+  "packageManager": "yarn@3.5.1",
+  "resolutions": {
+    "@storybook/vue3": "./core/vue3",
+    "@storybook/vue3-vite": "./core/vue3-vite"
+  }
+}
